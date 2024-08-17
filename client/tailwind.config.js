@@ -12,6 +12,8 @@ module.exports = {
       colors: {
         'primary-purple': '#1C0038',
       },
+      
+      
     },
   },
   plugins: [
