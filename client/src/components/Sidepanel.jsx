@@ -7,7 +7,7 @@ import userIcon from "../img/user.png"
 
 export function Sidepanel() {
     return (
-        <Sidebar  className=" *:bg-transparent">
+        <Sidebar  className=" *:bg-transparent ">
             <Sidebar.Items className="bg-[#16002C] rounded-2xl  h-[86vh] py-3 uppercase text-start   " >
                 <Sidebar.ItemGroup >
                     <Sidebar.Item  href="#"  className="text-white  hover:bg-[#432166] " >
