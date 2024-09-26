@@ -1,0 +1,35 @@
+/* Styling for the modal */
+
+/* .custom-gradient {
+  background: rgb(14 3 33 / 50%);
+  background: linear-gradient(35deg, rgb(34 13 68 / 100%) 0%, rgb(61 31 110 / 100%) 50%, rgb(28 0 56 / 100%) 100%);
+} */
+
+.primary-purple {
+  background: #1c0038;
+}
+.button-bg {
+  background: #ebae12;
+  color: #fff;
+  width: 50vh;
+}
+
+.text-main {
+  color: #fff;
+  font-size: 25pt;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+}
+

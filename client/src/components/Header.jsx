@@ -4,6 +4,8 @@ import { IoSearch } from "react-icons/io5";
 import logo from "../img/LOGO.png"
 import fileUploadImg from "../img/file_upload.png"
 import user from "../img/user.png"
+import SignIn from "./Sign-in";
+import SignUp from "./Sign-up";
 
 
 export function Header() { 
@@ -33,8 +35,10 @@ export function Header() {
                     
                     </div>
                 </form>
-            <div className="flex ">
-                <Button size="2xs" className=" bg-transparent mr-5"><img alt="File Upload" src={fileUploadImg} className="h-[32px] " /></Button>
+            <div className="flex  w-[10%]  justify-around">
+                <SignIn />
+                <SignUp />
+                {/* <Button size="2xs" className=" bg-transparent mr-5"><img alt="File Upload" src={fileUploadImg} className="h-[32px] " /></Button>
 
                 <Dropdown
                     arrowIcon={false}
@@ -44,11 +48,11 @@ export function Header() {
                     }
                 >
                     
-                    <Dropdown.Item>Sign in</Dropdown.Item>
+                    <Dropdown.Item></Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item>Register</Dropdown.Item>
+                    <Dropdown.Item></Dropdown.Item>
                 </Dropdown>
-                <Navbar.Toggle />
+                <Navbar.Toggle /> */}
 
             </div>
             </Navbar>
