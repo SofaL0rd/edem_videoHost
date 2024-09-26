@@ -4,8 +4,8 @@ import testVideo from "../temp/testVideo.mp4"
 
 export function VideoPage() {
     return (
-        <div className="flex  ">
-            <div id="video_detail" className=" min-w-[790px]  max-w-[1100px] m-4">
+        <div className="flex flex-col w-[80%]  2xl:flex-row">
+            <div id="video_detail" className="  min-w-[790px]  max-w-[1100px] m-4">
                 <video className=" w-full rounded-xl dark:border-gray-700" controls>
                     <source src={testVideo} type="video/mp4" />
                     Your browser does not support the video tag.
@@ -70,7 +70,7 @@ export function VideoPage() {
                     </p>
                 </div>
             </div>
-            <div id="Comments" className="bg-[#3D1F6E] w-[450px] right-2  my-4 mx-2 h-4/5 rounded-3xl">
+            <div id="Comments" className="bg-[#3D1F6E] 2xl:w-full  right-2  my-4 mx-2 h-4/5 rounded-3xl">
                 <h1 className=" text-center m-4 text-white text-2xl  font-bold">Comments</h1>
                 <List unstyled className=" overflow-y-scroll space-y-3 py-2 max-h-[84%]">
                     <List.Item className="p-4  bg-[#8E62D6]">

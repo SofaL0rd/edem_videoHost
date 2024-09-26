@@ -26,7 +26,7 @@ export function Header() {
 
             </Navbar.Collapse>
 
-                <form className="  w-[470px] mx-auto max-md:hidden">
+                <form className="  w-[470px] mx-auto max-xl:hidden">
                 <div className="relative">
                     <div className="absolute inset-y-0  start-[90%] flex items-center ps-3.5 pointer-events-none">
                         <IoSearch className="text-[#593691] text-2xl" />
@@ -35,7 +35,7 @@ export function Header() {
                     
                     </div>
                 </form>
-            <div className="flex  w-[10%]  justify-around">
+            <div className="flex   justify-around">
                 <SignIn />
                 <SignUp />
                 {/* <Button size="2xs" className=" bg-transparent mr-5"><img alt="File Upload" src={fileUploadImg} className="h-[32px] " /></Button>
@@ -51,8 +51,8 @@ export function Header() {
                     <Dropdown.Item></Dropdown.Item>
                     <Dropdown.Divider />
                     <Dropdown.Item></Dropdown.Item>
-                </Dropdown>
-                <Navbar.Toggle /> */}
+                </Dropdown> */}
+                <Navbar.Toggle />
 
             </div>
             </Navbar>

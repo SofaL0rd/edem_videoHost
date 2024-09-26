@@ -20,7 +20,7 @@ export function SignIn() {
 
   return (
     <>
-      <Button onClick={() => setOpenModal(true)}>Sign In</Button>
+      <Button className='mr-1' onClick={() => setOpenModal(true)}>Sign In</Button>
       <Modal show={openModal} size="md" onClose={onCloseModal} popup>
         <div >
         {/* className="primary-purple kanit-regular" */}
