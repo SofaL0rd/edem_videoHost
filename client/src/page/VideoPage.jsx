@@ -6,7 +6,7 @@ export function VideoPage() {
     return (
         <div className="flex flex-col w-[80%]  2xl:flex-row">
             <div id="video_detail" className="  min-w-[790px]  max-w-[1100px] m-4">
-                <video className=" w-full rounded-xl dark:border-gray-700" controls>
+                <video className=" w-full rounded-xl dark:border-gray-700" data-testid="video-element" controls>
                     <source src={testVideo} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
@@ -22,13 +22,13 @@ export function VideoPage() {
                     <ButtonGroup className="text-white  font-semibold mx-10">
                         <Button color="" className=" bg-[#3D1F6E] hover:bg-[#5d31a5] border-r-2  border-[#593691]" pill>
                             <svg width="33" height="33" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 17.5V35M14 17.5L7 17.5V35H14M14 17.5L23.0923 6.89232C23.9551 5.88578 25.3124 5.45307 26.5986 5.7746L26.6817 5.79541C29.0299 6.38245 30.0876 9.1185 28.7452 11.1324L24.5 17.5H32.4807C34.6894 17.5 36.3459 19.5206 35.9128 21.6864L33.8128 32.1864C33.4856 33.8224 32.0492 35 30.3807 35H14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14 17.5V35M14 17.5L7 17.5V35H14M14 17.5L23.0923 6.89232C23.9551 5.88578 25.3124 5.45307 26.5986 5.7746L26.6817 5.79541C29.0299 6.38245 30.0876 9.1185 28.7452 11.1324L24.5 17.5H32.4807C34.6894 17.5 36.3459 19.5206 35.9128 21.6864L33.8128 32.1864C33.4856 33.8224 32.0492 35 30.3807 35H14" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <span className="text-2xl ">1222</span>
                         </Button>
                         <Button color="" className="bg-[#3D1F6E] hover:bg-[#5d31a5] " pill>
                             <svg width="33" height="33" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28 24.5L28 6.99999M28 24.5L35 24.5L35 6.99999L28 6.99999M28 24.5L18.9077 35.1077C18.0449 36.1142 16.6876 36.5469 15.4014 36.2254L15.3183 36.2046C12.9701 35.6176 11.9124 32.8815 13.2548 30.8676L17.5 24.5L9.5193 24.5C7.31062 24.5 5.65407 22.4794 6.0872 20.3136L8.1872 9.81364C8.51445 8.17757 9.95085 6.99999 11.6193 6.99999L28 6.99999" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M28 24.5L28 6.99999M28 24.5L35 24.5L35 6.99999L28 6.99999M28 24.5L18.9077 35.1077C18.0449 36.1142 16.6876 36.5469 15.4014 36.2254L15.3183 36.2046C12.9701 35.6176 11.9124 32.8815 13.2548 30.8676L17.5 24.5L9.5193 24.5C7.31062 24.5 5.65407 22.4794 6.0872 20.3136L8.1872 9.81364C8.51445 8.17757 9.95085 6.99999 11.6193 6.99999L28 6.99999" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <span className="text-2xl">555</span>
 
@@ -125,7 +125,7 @@ export function VideoPage() {
                     </List.Item>
                 </List>
                 <form className="flex my-2 px-4">
-                    <input type="text" id="AddComment" class=" bg-[#593691] text-white text-sm rounded-lg  block w-4/5 " maxLength={300} />
+                    <input type="text" id="AddComment" className=" bg-[#593691] text-white text-sm rounded-lg  block w-4/5 " maxLength={300} />
                     <Button className="text-sm  ml-4" color="warning" size="sm" label >Send</Button>
                 </form>
             </div>

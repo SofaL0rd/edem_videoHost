@@ -13,7 +13,7 @@ export function Header() {
     
         <Navbar fluid rounded className="bg-primary-purple  " >
                 <Navbar.Brand href="#">
-                    <img src={logo} className=" mx-8 h-[75px] " alt="Edem`s-Garden" />
+                    <img src={logo} className=" mx-8 h-[75px] " alt="Edem`s-Garden logo" />
                 </Navbar.Brand>
            
             <Navbar.Collapse className="mx-auto px-5 ">
@@ -31,7 +31,7 @@ export function Header() {
                     <div className="absolute inset-y-0  start-[90%] flex items-center ps-3.5 pointer-events-none">
                         <IoSearch className="text-[#593691] text-2xl" />
                     </div>
-                    <input type="text" id="search" className="  bg-[#3D1F6E] text-white text-md rounded-3xl block w-full ps-10 p-2.5 " />
+                    <input type="text" id="search" data-testid='search' className="  bg-[#3D1F6E] text-white text-md rounded-3xl block w-full ps-10 p-2.5 " />
                     
                     </div>
                 </form>
