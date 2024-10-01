@@ -1,6 +1,6 @@
 import { Avatar, Badge, Button, ButtonGroup, Dropdown, List,  } from "flowbite-react"
-import testVideo from "../temp/testVideo.mp4"
-// import testVideoSmall from "../temp/testVideoSmall.mp4"
+import testVideo from "../testVideos/testVideo.mp4"
+ import testVideoSmall from "../testVideos/testVideoSmall.mp4"
 
 export function VideoPage() {
     return (
