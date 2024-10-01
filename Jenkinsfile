@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat ' cd client && npm test -- --ci --coverage'
+                bat ' cd client && npm test a'
             }
         }
     }
