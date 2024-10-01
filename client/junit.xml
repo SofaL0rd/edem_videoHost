@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="0" failures="0" errors="0" time="2.005">
+<testsuites name="jest tests" tests="1" failures="1" errors="0" time="5.662">
+  <testsuite name="src/App.test.js" errors="0" failures="1" skipped="0" timestamp="2024-10-01T09:32:12" time="0.965" tests="1">
+    <testcase classname=" renders App component correctly" name=" renders App component correctly" time="0.002">
+      <failure>ReferenceError: document is not defined
+    at render (/workspace/edem_videoHost/client/node_modules/@testing-library/react/dist/pure.js:239:5)
+    at Object.&lt;anonymous&gt; (/workspace/edem_videoHost/client/src/App.test.js:21:9)
+    at Promise.then.completed (/workspace/edem_videoHost/client/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/workspace/edem_videoHost/client/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/workspace/edem_videoHost/client/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/workspace/edem_videoHost/client/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/workspace/edem_videoHost/client/node_modules/jest-circus/build/run.js:66:9)
+    at run (/workspace/edem_videoHost/client/node_modules/jest-circus/build/run.js:25:3)</failure>
+    </testcase>
+  </testsuite>
 </testsuites>

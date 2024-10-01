@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/preset-react": "^7.24.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/user-event": "^13.5.0",
     "flowbite": "^2.5.1",
@@ -11,20 +10,42 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4" 
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test  --testMatch '**/src/**/*.test.js'",
     "eject": "react-scripts eject",
-    "test:ci": " jest "
+    "test-out": "jest --coverage --coverageDirectory=output/coverage/jest"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "jest": {
+    "coverageReporters": [
+      "text"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "transform": {
+    "^.+\\.jsx?$": "babel-jest"
+  },
+  "moduleNameMapper": {
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+  },
+  "transformIgnorePatterns": [
+    "node_modules/(?!@babel/runtime)"
+  ]
+  },
+  "jest-junit": {
+    "output": "output/coverage/junit/junit.xml",
+    "usePathForSuiteName": "true"
   },
   "browserslist": {
     "production": [
@@ -39,6 +60,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
     "@testing-library/react": "^16.0.1",
     "jest": "^27.5.1",
     "jest-junit": "^16.0.0",
