@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat ' cd client && npm test a'
+                bat ' cd client && CI=true npm test'
             }
         }
     }
