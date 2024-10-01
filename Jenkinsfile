@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat ' cd client &&  npm run test --if-present
+                bat ' cd client &&  npm run test --if-present'
 '
             }
         }
